@@ -1063,7 +1063,7 @@ class HTTPClient:
         if self.__asession:
             await self.__asession.close()
         if self.__session:
-            self.__session.close()
+            await self.__session.close()
 
     # Login management
 
